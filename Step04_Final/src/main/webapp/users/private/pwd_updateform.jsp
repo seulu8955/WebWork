@@ -25,6 +25,9 @@
 			<button type="submit">수정하기</button>
 			<button type="reset">리셋</button>
 		</form>	
+		
+		
+		
 	</div>
 	<script>
 		//폼에 submit 이벤트가 일어났을때 실행할 함수를 등록하고 

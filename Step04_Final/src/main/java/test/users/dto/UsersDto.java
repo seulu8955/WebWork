@@ -1,12 +1,13 @@
 package test.users.dto;
 
 public class UsersDto {
+	
 	private String id;
 	private String pwd;
 	private String email;
 	private String profile;
 	private String regdate;
-	//새 비밀번호
+	//새 비밀번호를 담을 필드
 	private String newPwd;
 	
 	public UsersDto() {}
@@ -68,5 +69,7 @@ public class UsersDto {
 	public void setNewPwd(String newPwd) {
 		this.newPwd = newPwd;
 	}
+
+	
 	
 }

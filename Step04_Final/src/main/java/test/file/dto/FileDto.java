@@ -8,11 +8,13 @@ public class FileDto {
 	private String saveFileName;
 	private long fileSize;
 	private String regdate;
+	private int StartRowNum;
+	private int EndRowNum;
 	
 	public FileDto() {}
 
 	public FileDto(int num, String writer, String title, String orgFileName, String saveFileName, long fileSize,
-			String regdate) {
+			String regdate, int startRowNum, int endRowNum) {
 		super();
 		this.num = num;
 		this.writer = writer;
@@ -21,6 +23,8 @@ public class FileDto {
 		this.saveFileName = saveFileName;
 		this.fileSize = fileSize;
 		this.regdate = regdate;
+		StartRowNum = startRowNum;
+		EndRowNum = endRowNum;
 	}
 
 	public int getNum() {
@@ -77,6 +81,22 @@ public class FileDto {
 
 	public void setRegdate(String regdate) {
 		this.regdate = regdate;
+	}
+
+	public int getStartRowNum() {
+		return StartRowNum;
+	}
+
+	public void setStartRowNum(int startRowNum) {
+		StartRowNum = startRowNum;
+	}
+
+	public int getEndRowNum() {
+		return EndRowNum;
+	}
+
+	public void setEndRowNum(int endRowNum) {
+		EndRowNum = endRowNum;
 	}
 	
 }
