@@ -19,6 +19,9 @@
 <title>/cafe/detail.jsp</title>
 </head>
 <body>
+	<jsp:include page="/include/navbar.jsp">
+		<jsp:param value="index" name="thisPage"/>
+   	</jsp:include>
    <div class="container">
       <h3>글 상세 보기</h3>
       <table>

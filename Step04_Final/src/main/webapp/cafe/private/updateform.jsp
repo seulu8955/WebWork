@@ -19,6 +19,9 @@
 </style>
 </head>
 <body>
+	<jsp:include page="/include/navbar.jsp">
+		<jsp:param value="index" name="thisPage"/>
+   	</jsp:include>
 	<div class="container">
 		<a href="${pageContext.request.contextPath }/cafe/list.jsp">글목록</a>
       <h3>글 수정 폼 입니다.</h3>

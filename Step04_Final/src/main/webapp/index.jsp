@@ -14,18 +14,38 @@
 <head>
 <meta charset="UTF-8">
 <title>/index.jsp</title>
+<style>
+	#login{
+		position:fixed;
+		bottom: : 50;
+	    right: 0;
+	    width: 300px;
+	    
+	}
+	
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
+	<jsp:include page="/include/navbar.jsp">
+		<jsp:param value="index" name="thisPage"/>
+   	</jsp:include>
 	<div class="container">
-   		<%if(id!=null){ %>
-   			<p>
-   				<a href="${pageContext.request.contextPath }/users/private/info.jsp"><%=id %> 님 로그인중...</a>
-   				
-   				<a href="${pageContext.request.contextPath }/users/logout.jsp">로그아웃</a>
-   			</p>	
-   		<%}else{ %>
-   				<a href="${pageContext.request.contextPath }/users/signup_form.jsp">회원가입</a>
+		<div id="login" class="">
+	   		<%if(id!=null){ %>
+	   			<p >
+	   				<strong><%=id %></strong>
+	   				<a href="${pageContext.request.contextPath }/users/private/info.jsp"> MyPage</a><%// 이미지 넣기 %>
+	   				
+	   				<a href="${pageContext.request.contextPath }/users/logout.jsp">로그아웃</a>
+	   			</p>	
+	   		<%}else{ %>
+	   		<button id="makeInfo" type="button" href="${pageContext.request.contextPath }/users/signup_form.jsp" class="btn btn-outline-secondary" >회원가입</button>
+	   				<%-- <a href="${pageContext.request.contextPath }/users/signup_form.jsp" class="col-md-3 offset-md-9" >회원가입</a><%// 이미지 넣기 %> --%>
    		 <%} %>
+   		 </div>
+   		 <br />
       	<h1>인덱스 페이지 입니다.</h1>
       	<ul>
          	<li><a href="${pageContext.request.contextPath }/users/loginform.jsp">로그인</a></li>

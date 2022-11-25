@@ -7,7 +7,10 @@
 <title>/file/private/upload_form.jsp</title>
 </head>
 <body>
-   <div class="container">
+	<jsp:include page="/include/navbar.jsp">
+		<jsp:param value="index" name="thisPage"/>
+   	</jsp:include>
+	<div class="container">
       <h3>파일 업로드 폼 입니다.</h3>
       <!-- 
          파일 업로드 폼 작성법

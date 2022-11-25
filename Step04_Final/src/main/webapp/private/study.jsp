@@ -11,6 +11,8 @@
 <title>/private/study.jsp</title>
 </head>
 <body>
-	
+	<jsp:include page="/include/navbar.jsp">
+		<jsp:param value="index" name="thisPage"/>
+   	</jsp:include>
 </body>
 </html>
