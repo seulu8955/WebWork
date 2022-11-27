@@ -5,7 +5,7 @@
 	String id=(String)session.getAttribute("id");
 %>    
 <%--/include/navbar.jsp --%>
-<header class="p-3 text-bg-dark">
+<header class="p-3 text-bg-dark" >
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -14,10 +14,10 @@
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="${pageContext.request.contextPath }/index.jsp" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="private/study.jsp" class="nav-link px-2 text-white">Study</a></li>
-          <li><a href="private/game.jsp" class="nav-link px-2 text-white">Game</a></li>
-          <li><a href="file/list.jsp" class="nav-link px-2 text-white">Reference</a></li>
-          <li><a href="cafe/list.jsp" class="nav-link px-2 text-white">Cafe</a></li>
+          <li><a href="${pageContext.request.contextPath }/private/study.jsp" class="nav-link px-2 text-white">Study</a></li>
+          <li><a href="${pageContext.request.contextPath }/private/game.jsp" class="nav-link px-2 text-white">Game</a></li>
+          <li><a href="${pageContext.request.contextPath }/file/list.jsp" class="nav-link px-2 text-white">Reference</a></li>
+          <li><a href="${pageContext.request.contextPath }/cafe/list.jsp" class="nav-link px-2 text-white">Cafe</a></li>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
