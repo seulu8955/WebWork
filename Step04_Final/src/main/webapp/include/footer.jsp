@@ -1,10 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<style>
-	.container{
-		position: relative;
-	}
-</style>
+
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   
